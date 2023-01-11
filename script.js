@@ -10,7 +10,7 @@ function convertToRoman(num) {
     };
 
   //your code here
-	let result = '';
+  let result = '';
 
   // iterate over the romanNumerals object
   for (let roman in obj) {
@@ -29,16 +29,6 @@ function convertToRoman(num) {
 // console.log(convertToRoman(14)); // XIV
 // console.log(convertToRoman(798)); // DCCXCVIII
 // console.log(convertToRoman(3999)); //  MMMCMXCIX
-
-
-
-// do not edit below this line
-
-}
-// You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
-
-// console.log(convertToRoman(36));
-
 
 
 
