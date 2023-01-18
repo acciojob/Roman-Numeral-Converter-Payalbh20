@@ -8,18 +8,17 @@ function convertToRoman(num) {
       5:['V', 5], 
       6:['I', 1]
     };
+let result = '';
 
-  //your code here
-var romanized = "";
-
-  for (var index = 0; index < obj.length; index++) {
-    while (obj[index] <= num) {
-      romanized += obj[index];
-      num -= obj[index];
+  for (let key in obj) {
+    while (num >= obj[key]) {
+      result += key;
+      num -= obj[key];
     }
   }
-  return romanized.toUpperCase();
-}
+  return result;
+  //your code here
+
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
